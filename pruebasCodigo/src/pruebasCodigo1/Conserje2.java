@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Conserje2
 {
+	private static int num1=0;
 	private static Hijo []h =new Hijo [3];
 	private static Vecina [] a = new Vecina [4];
 	private static int indice=0;
@@ -21,10 +22,7 @@ public class Conserje2
 			h[indice].setApellidos(aux.getApellidos());
 			h[indice].setEdad(aux.getEdad());
 		}
-	
-	
-	
-	
+		
 	}
 		
 	public static Hijo introducirDatosV()
@@ -35,7 +33,7 @@ public class Conserje2
 		hobbie.setNombre(teclado.nextLine());
 		System.out.print("introduce donde sueles realizarlo ");
 		hobbie.setApellidos(teclado.nextLine());
-		System.out.print("¿Con cuántas personas sueles realizarlo? ");
+		System.out.print("Â¿Con cuÃ¡ntas personas sueles realizarlo? ");
 		hobbie.setEdad(Integer.parseInt(teclado.nextLine()));
 		return hobbie;
 	}
